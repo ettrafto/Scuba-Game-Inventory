@@ -1,0 +1,8 @@
+//
+// Created by EvanT on 9/16/2023.
+//
+
+#ifndef OEP_ETTRAFTO_INVENTORY_H
+#define OEP_ETTRAFTO_INVENTORY_H
+
+#endif //OEP_ETTRAFTO_INVENTORY_H
