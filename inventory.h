@@ -6,8 +6,29 @@
 #define OEP_ETTRAFTO_INVENTORY_H
 
 
-class inventory {
+#include "item.h"
+#include <vector>
 
+class inventory {
+public:
+
+    inventory();
+
+    int getMoney();
+    void setMoney(int money);
+
+    std::vector<item> getOwnedItems();
+    void setOwnedItems(item& itemIn);
+
+    int getNumItems();
+    void updateNumItems(int numItemsIn);
+
+
+
+private:
+    int money;
+    std::vector<item> ownedItems;
+    int numItems;
 };
 
 

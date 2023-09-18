@@ -6,6 +6,8 @@
 #define OEP_ETTRAFTO_ACTIVEITEMS_H
 
 
+#include "item.h"
+
 class activeItems {
 public:
     activeItems();
@@ -40,7 +42,7 @@ public:
     const item& getAccessory4();
     void setAccessory4(const item& accessory4In);
 
-    int[] getCurrStat();
+    int* getCurrStat();
 
 
 private:

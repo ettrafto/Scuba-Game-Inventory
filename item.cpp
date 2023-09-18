@@ -3,12 +3,13 @@
 //
 
 #include "item.h"
+#include <string>
 
 item::item(int idIn, std::string nameIn, std::string detailsIn, int typeIn, int costIn, int statsIn){
 
     int id = idIn;
-    string name = nameIn;
-    string details = detailsIn;
+    std::string name = nameIn;
+    std::string details = detailsIn;
     int type = typeIn;
     int cost = costIn;
 
@@ -45,17 +46,17 @@ item::item(int idIn, std::string nameIn, std::string detailsIn, int typeIn, int 
 };
 
 //returns item id int
-int item::getItemID(){
+int item::getItemId() {
     return id;
 }
 
 //returns item name string
-string item::getItemName(){
+std::string item::getItemName(){
     return name;
 }
 
 // returns item details string
-string item::getItemDetails(){
+std::string item::getItemDetails(){
     return details;
 }
 
@@ -103,4 +104,3 @@ int item::getItemDepth(){
     return depth;
 }
 
-};

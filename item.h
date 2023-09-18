@@ -17,9 +17,9 @@ public:
 
     int getItemId();
 
-    string getItemName();
+    std::string getItemName();
 
-    string getItemDetails();
+    std::string getItemDetails();
 
     int getItemType();
 
@@ -41,8 +41,8 @@ public:
 
 private:
     int id;
-    string name;
-    string details;
+    std::string name;
+    std::string details;
     int type;
     int cost;
     int speed;

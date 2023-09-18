@@ -4,121 +4,100 @@
 
 #include "activeItems.h"
 
-class activeItems {
-public:
-    activeItems::activeItems();
 
-    const item& activeItems::getBody(){
-        return body;
-    }
-    void activeItems::setBody(const item& bodyIn){
-        body = bodyIn;
-    }
+activeItems::activeItems(){
 
-    const item& activeItems::getMask(){
-        return mask;
-    }
-    void activeItems::setMask(const item& maskIn){
-        mask = maskIn;
-    }
+}
 
-    const item& activeItems::getFins(){
-        return fins;
-    }
-    void activeItems::setFins(const item& finsIn){
-        fins = finsIn;
-    }
+const item& activeItems::getBody(){
+    return body;
+}
+void activeItems::setBody(const item& bodyIn){
+    body = bodyIn;
+}
 
-    const item& activeItems::getBcd(){
-        return bcd;
-    }
-    void activeItems::setBcd(const item& bcdIn){
-        bcd = bcdIn;
-    }
+const item& activeItems::getMask(){
+    return mask;
+}
+void activeItems::setMask(const item& maskIn){
+    mask = maskIn;
+}
 
-    const item& activeItems::getTank(){
-        return tank;
-    }
-    void activeItems::setTank(const item& tankIn){
-        tank = tankIn;
-    }
+const item& activeItems::getFins(){
+    return fins;
+}
+void activeItems::setFins(const item& finsIn){
+    fins = finsIn;
+}
 
-    const item& activeItems::getRegulator(){
-        return regulator;
-    }
-    void activeItems::setRegulator(const item& regulatorIn){
-        regulator = regulatorIn;
-    }
+const item& activeItems::getBcd(){
+    return bcd;
+}
+void activeItems::setBcd(const item& bcdIn){
+    bcd = bcdIn;
+}
 
-    const items&[] activeItems::getAccessory1(){
-        return accessory1;
-    }
-    void activeItems::setAccessory1(const item& accessory1In){
-        accessory1 = accessory1In;
-    }
+const item& activeItems::getTank(){
+    return tank;
+}
+void activeItems::setTank(const item& tankIn){
+    tank = tankIn;
+}
 
-    const items&[] activeItems::getAccessory2(){
-        return accessory2;
-    }
-    void activeItems::setAccessory2(const item& accessory2In){
-        accessory2 = accessory2In;
-    }
+const item& activeItems::getRegulator(){
+    return regulator;
+}
+void activeItems::setRegulator(const item& regulatorIn){
+    regulator = regulatorIn;
+}
 
-    const items&[] activeItems::getAccessory3(){
-        return accessory3;
-    }
-    void activeItems::setAccessory3(const item& accessory3In){
-        accessory3 = accessory3In;
-    }
+const item& activeItems::getAccessory1(){
+    return accessory1;
+}
+void activeItems::setAccessory1(const item& accessory1In){
+    accessory1 = accessory1In;
+}
 
-    const items&[] activeItems::getAccessory4(){
-        return accessory4;
-    }
-    void activeItems::setAccessory4(const item& accessory4In){
-        accessory4 = accessory4In;
-    }
+const item& activeItems::getAccessory2(){
+    return accessory2;
+}
+void activeItems::setAccessory2(const item& accessory2In){
+    accessory2 = accessory2In;
+}
 
+const item& activeItems::getAccessory3(){
+    return accessory3;
+}
+void activeItems::setAccessory3(const item& accessory3In){
+    accessory3 = accessory3In;
+}
 
-    //TO-DO: THIS
-    int[] activeItems::getCurrStat(){
-        body.getItemStats();
-    }
-    int[] bodyStat;
-
-    for()
-
-    maskStat = ;
-    finsStat;
-    bcdStat;
-    tankStat;
-    regulatorStat;
-    accessory1Stat;
-    accessory2Stat;
-    accessory3Stat;
-    accessory4Stat;
+const item& activeItems::getAccessory4(){
+    return accessory4;
+}
+void activeItems::setAccessory4(const item& accessory4In){
+    accessory4 = accessory4In;
+}
 
 
-    int* addArrays(const int* arr1, const int* arr2, const int* arr3, const int* arr4, const int* arr5, const int* arr6, int size) {
-        int* result = new int[size]; // Allocate memory for the result array
+//TO-DO: THIS
+int* activeItems::getCurrStat(){
 
-        for (int i = 0; i < size; i++) {
-            result[i] = arr1[i] + arr2[i] + arr3[i] + arr4[i] + arr5[i] + arr6[i];
-        }
+    int speed = (mask.getItemSpeed() + fins.getItemSpeed() + bcd.getItemSpeed() + tank.getItemSpeed() + regulator.getItemSpeed() + accessory1.getItemSpeed() + accessory2.getItemSpeed()+ accessory3.getItemSpeed()+ accessory4.getItemSpeed());
 
-        return result;
-    }
+    int maneuver = (mask.getItemManeuver() + fins.getItemManeuver() + bcd.getItemManeuver() + tank.getItemManeuver() + regulator.getItemManeuver() + accessory1.getItemManeuver() + accessory2.getItemManeuver()+ accessory3.getItemManeuver()+ accessory4.getItemManeuver());
 
+    int stealth = (mask.getItemStealth() + fins.getItemStealth() + bcd.getItemStealth() + tank.getItemStealth() + regulator.getItemStealth() + accessory1.getItemStealth() + accessory2.getItemStealth()+ accessory3.getItemStealth()+ accessory4.getItemStealth());
 
-private:
-    item body;
-    item mask;
-    item fins;
-    item bcd;
-    item tank;
-    item regulator;
-    item accessory1;
-    item accessory2;
-    item accessory3;
-    item accessory4;
+    int storage = (mask.getItemStorage() + fins.getItemStorage() + bcd.getItemStorage() + tank.getItemStorage() + regulator.getItemStorage() + accessory1.getItemStorage() + accessory2.getItemStorage()+ accessory3.getItemStorage()+ accessory4.getItemStorage());
 
-};
+    int damage = (mask.getItemDamage() + fins.getItemDamage() + bcd.getItemDamage() + tank.getItemDamage() + regulator.getItemDamage() + accessory1.getItemDamage() + accessory2.getItemDamage()+ accessory3.getItemDamage()+ accessory4.getItemDamage());
+
+    int defense = (mask.getItemDefense() + fins.getItemDefense() + bcd.getItemDefense() + tank.getItemDefense() + regulator.getItemDefense() + accessory1.getItemDefense() + accessory2.getItemDefense()+ accessory3.getItemDefense()+ accessory4.getItemDefense());
+
+    int depth = (mask.getItemDepth() + fins.getItemDepth() + bcd.getItemDepth() + tank.getItemDepth() + regulator.getItemDepth() + accessory1.getItemDepth() + accessory2.getItemDepth()+ accessory3.getItemDepth()+ accessory4.getItemDepth());
+
+    int* ActiveStats = {speed, maneuver,stealth,storage,damage,defense,depth}
+
+    return stats;
+}

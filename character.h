@@ -8,6 +8,14 @@
 
 class character {
 
+public:
+    character();
+
+private:
+    inventory& inventory;
+    activeItems& activeItems;
+
+
 };
 
 
