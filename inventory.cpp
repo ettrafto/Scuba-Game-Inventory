@@ -7,6 +7,7 @@
 
 inventory::inventory(){
 
+
 }
 
 int inventory::getMoney(){

@@ -1,7 +1,14 @@
+#include "game.h"
+
 //
 // Created by EvanT on 9/16/2023.
 //
-game.start()
+int main(){
+    game game1;
+    game1.start();
+    return 0;
+}
+int main();
 /*
  * Welcome to the ScubaDiver Inventory
  * Please select an option

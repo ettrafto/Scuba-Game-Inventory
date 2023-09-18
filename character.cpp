@@ -4,7 +4,6 @@
 
 #include "character.h"
 
+
 character::character(){
-    inventory inventory;
-    activeItems activeItems;
 }

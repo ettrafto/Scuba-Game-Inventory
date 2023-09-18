@@ -3,11 +3,12 @@
 //
 
 #include "activeItems.h"
+#include "item.h"
 
 
-activeItems::activeItems(){
+activeItems::activeItems()
+{}
 
-}
 
 const item& activeItems::getBody(){
     return body;
@@ -97,7 +98,7 @@ int* activeItems::getCurrStat(){
 
     int depth = (mask.getItemDepth() + fins.getItemDepth() + bcd.getItemDepth() + tank.getItemDepth() + regulator.getItemDepth() + accessory1.getItemDepth() + accessory2.getItemDepth()+ accessory3.getItemDepth()+ accessory4.getItemDepth());
 
-    int* ActiveStats = {speed, maneuver,stealth,storage,damage,defense,depth}
+    int activeStats[] = {speed, maneuver,stealth,storage,damage,defense,depth};
 
-    return stats;
+    return activeStats;
 }

@@ -6,14 +6,17 @@
 #define OEP_ETTRAFTO_CHARACTER_H
 
 
+#include "inventory.h"
+#include "activeItems.h"
+
 class character {
 
 public:
     character();
 
 private:
-    inventory& inventory;
-    activeItems& activeItems;
+    inventory characterInventory;
+    activeItems CharacterActiveItems;
 
 
 };

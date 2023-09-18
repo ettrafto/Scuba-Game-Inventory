@@ -46,16 +46,16 @@ public:
 
 
 private:
-    item body;
-    item mask;
-    item fins;
-    item bcd;
-    item tank;
-    item regulator;
-    item accessory1;
-    item accessory2;
-    item accessory3;
-    item accessory4;
+    item body = item(0, "empty", "Put Something On!", 0, 0, 0);
+    item mask = item(0, "empty", "Put Something On!", 0, 0, 0);
+    item fins = item(0, "empty", "Put Something On!", 0, 0, 0);
+    item bcd = item(0, "empty", "Put Something On!", 0, 0, 0);
+    item tank = item(0, "empty", "Put Something On!", 0, 0, 0);
+    item regulator = item(0, "empty", "Put Something On!", 0, 0, 0);
+    item accessory1 = item(0, "empty", "Put Something On!", 0, 0, 0);
+    item accessory2 = item(0, "empty", "Put Something On!", 0, 0, 0);
+    item accessory3 = item(0, "empty", "Put Something On!", 0, 0, 0);
+    item accessory4 = item(0, "empty", "Put Something On!", 0, 0, 0);
 
 };
 
