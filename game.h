@@ -42,8 +42,8 @@ public:
 
 
 private:
-    int state;
-    int screen;
+    //int state;
+    //int screen;
     enum class MenuOption {
         SelectBody = 1,
         SelectMask = 2,

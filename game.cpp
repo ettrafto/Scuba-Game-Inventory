@@ -19,7 +19,7 @@ void game::start() {
     bool valid = false;
 
     while (valid == false) {
-        if (input.length() == 1 && input == "0" && input == "1" && input == "2") {
+        if ( input == "0" || input == "1" || input == "2") {
             valid = true;
         } else {
             std::cout << "Invalid Input" << std::endl;
@@ -53,7 +53,7 @@ void game::inventory() {
     bool valid = false;
 
     while (valid == false) {
-        if (input.length() == 1 && input == "0" && input == "1" && input == "2" && input == "3" && input == "4" && input == "5"&& input == "6" && input == "7") {
+        if (input == "0" || input == "1" || input == "2" || input == "3" || input == "4" || input == "5" || input == "6" || input == "7") {
             valid = true;
         } else {
             std::cout << "Invalid Input" << std::endl;
@@ -106,7 +106,7 @@ void game::shop() {
     bool valid = false;
 
     while (valid == false) {
-        if (input.length() == 1 && input == "0" && input == "1" && input == "2" && input == "3" && input == "4" && input == "5"&& input == "6" && input == "7") {
+        if (input == "0" || input == "1" || input == "2" || input == "3" || input == "4" || input == "5" || input == "6" || input == "7") {
             valid = true;
         } else {
             std::cout << "Invalid Input" << std::endl;
@@ -144,7 +144,7 @@ void game::stop(){
         //end program
     }
 
-void iBody() {
+void game::iBody() {
     std::cout << "Menus Work in Progess\nPress 0 to go back" << std::endl;
     bool valid = false;
 
@@ -160,7 +160,7 @@ void iBody() {
     }
 
 }
-void iMask(){
+void game::iMask(){
     std::cout << "Menus Work in Progess\nPress 0 to go back" << std::endl;
     bool valid = false;
 
@@ -175,7 +175,7 @@ void iMask(){
         }
     }
 }
-void iFins(){
+void game::iFins(){
     std::cout << "Menus Work in Progess\nPress 0 to go back" << std::endl;
     bool valid = false;
 
@@ -190,7 +190,7 @@ void iFins(){
         }
     }
 }
-void iBcd(){
+void game::iBcd(){
     std::cout << "Menus Work in Progess\nPress 0 to go back" << std::endl;
     bool valid = false;
 
@@ -206,7 +206,7 @@ void iBcd(){
     }
 
 }
-void iTank(){
+void game::iTank(){
     std::cout << "Menus Work in Progess\nPress 0 to go back" << std::endl;
     bool valid = false;
 
@@ -221,7 +221,7 @@ void iTank(){
         }
     }
 }
-void iReg(){
+void game::iReg(){
     std::cout << "Menus Work in Progess\nPress 0 to go back" << std::endl;
     bool valid = false;
 
@@ -236,115 +236,7 @@ void iReg(){
         }
     }
 }
-void iAcces(){
-    std::cout << "Menus Work in Progess\nPress 0 to go back" << std::endl;
-    bool valid = false;
-
-    std::string input;
-    std::cin >> input;
-
-    while (valid == false) {
-        if (input == "0") {
-            valid = true;
-        } else {
-            std::cout << "Invalid Input" << std::endl;
-        }
-    }
-}
-
-void sBody(){
-    std::cout << "Menus Work in Progess\nPress 0 to go back" << std::endl;
-    bool valid = false;
-
-    std::string input;
-    std::cin >> input;
-
-    while (valid == false) {
-        if (input == "0") {
-            valid = true;
-        } else {
-            std::cout << "Invalid Input" << std::endl;
-        }
-    }
-}
-void sMask() {
-    std::cout << "Menus Work in Progess\nPress 0 to go back" << std::endl;
-
-    bool valid = false;
-
-    std::string input;
-    std::cin >> input;
-
-    while (valid == false) {
-        if (input == "0") {
-            valid = true;
-        } else {
-            std::cout << "Invalid Input" << std::endl;
-        }
-    }
-}
-void sFins(){
-    std::cout << "Menus Work in Progess\nPress 0 to go back" << std::endl;
-    bool valid = false;
-
-    std::string input;
-    std::cin >> input;
-
-    while (valid == false) {
-        if (input == "0") {
-            valid = true;
-        } else {
-            std::cout << "Invalid Input" << std::endl;
-        }
-    }
-}
-void sBcd(){
-    std::cout << "Menus Work in Progess\nPress 0 to go back" << std::endl;
-    bool valid = false;
-
-    std::string input;
-    std::cin >> input;
-
-    while (valid == false) {
-        if (input == "0") {
-            valid = true;
-        } else {
-            std::cout << "Invalid Input" << std::endl;
-        }
-    }
-}
-void sTank(){
-    std::cout << "Menus Work in Progess\nPress 0 to go back" << std::endl;
-    bool valid = false;
-
-    std::string input;
-    std::cin >> input;
-
-    while (valid == false) {
-        if (input == "0") {
-            valid = true;
-        } else {
-            std::cout << "Invalid Input" << std::endl;
-        }
-    }
-}
-void sReg(){
-    std::cout << "Menus Work in Progess\nPress 0 to go back" << std::endl;
-    bool valid = false;
-
-    std::string input;
-    std::cin >> input;
-
-    while (valid == false) {
-        if (input == "0") {
-            valid = true;
-        } else {
-            std::cout << "Invalid Input" << std::endl;
-        }
-    }
-}
-void sAcces(){
-
+void game::iAcces(){
     std::cout << "Menus Work in Progess\nPress 0 to go back" << std::endl;
     bool valid = false;
 
@@ -360,12 +252,120 @@ void sAcces(){
     }
 }
 
+void game::sBody(){
+    std::cout << "Menus Work in Progess\nPress 0 to go back" << std::endl;
+    bool valid = false;
+
+    std::string input;
+    std::cin >> input;
+
+    while (valid == false) {
+        if (input == "0") {
+            valid = true;
+        } else {
+            std::cout << "Invalid Input" << std::endl;
+        }
+    }
+}
+void game::sMask() {
+    std::cout << "Menus Work in Progess\nPress 0 to go back" << std::endl;
+
+    bool valid = false;
+
+    std::string input;
+    std::cin >> input;
+
+    while (valid == false) {
+        if (input == "0") {
+            valid = true;
+        } else {
+            std::cout << "Invalid Input" << std::endl;
+        }
+    }
+}
+void game::sFins(){
+    std::cout << "Menus Work in Progess\nPress 0 to go back" << std::endl;
+    bool valid = false;
+
+    std::string input;
+    std::cin >> input;
+
+    while (valid == false) {
+        if (input == "0") {
+            valid = true;
+        } else {
+            std::cout << "Invalid Input" << std::endl;
+        }
+    }
+}
+void game::sBcd(){
+    std::cout << "Menus Work in Progess\nPress 0 to go back" << std::endl;
+    bool valid = false;
+
+    std::string input;
+    std::cin >> input;
+
+    while (valid == false) {
+        if (input == "0") {
+            valid = true;
+        } else {
+            std::cout << "Invalid Input" << std::endl;
+        }
+    }
+}
+void game::sTank(){
+    std::cout << "Menus Work in Progess\nPress 0 to go back" << std::endl;
+    bool valid = false;
+
+    std::string input;
+    std::cin >> input;
+
+    while (valid == false) {
+        if (input == "0") {
+            valid = true;
+        } else {
+            std::cout << "Invalid Input" << std::endl;
+        }
+    }
+}
+void game::sReg(){
+    std::cout << "Menus Work in Progess\nPress 0 to go back" << std::endl;
+    bool valid = false;
+
+    std::string input;
+    std::cin >> input;
+
+    while (valid == false) {
+        if (input == "0") {
+            valid = true;
+        } else {
+            std::cout << "Invalid Input" << std::endl;
+        }
+    }
+}
+void game::sAcces(){
+
+    std::cout << "Menus Work in Progess\nPress 0 to go back" << std::endl;
+    bool valid = false;
+
+    std::string input;
+    std::cin >> input;
+
+    while (valid == false) {
+        if (input == "0") {
+            valid = true;
+        } else {
+            std::cout << "Invalid Input" << std::endl;
+        }
+    }
+}
 
 
 
 
 
 
+/*
 void game::setState(int stateIn){
     state = stateIn;
 }
@@ -379,4 +379,6 @@ void game::setScreen(int screenIn){
 }
 int game::getScreen(){
     return screen;
-}
+}*/
+
+
