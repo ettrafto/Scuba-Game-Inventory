@@ -18,7 +18,7 @@ public:
 
     void iBody();
     void iMask();
-    void iFins();
+    static void iFins();
     void iBcd();
     void iTank();
     void iReg();

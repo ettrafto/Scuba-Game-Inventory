@@ -18,7 +18,7 @@ void game::start() {
 
     bool valid = false;
 
-    while (valid == false) {
+    while (!valid) {
         if ( input == "0" || input == "1" || input == "2") {
             valid = true;
         } else {
@@ -52,7 +52,7 @@ void game::inventory() {
 
     bool valid = false;
 
-    while (valid == false) {
+    while (!valid) {
         if (input == "0" || input == "1" || input == "2" || input == "3" || input == "4" || input == "5" || input == "6" || input == "7") {
             valid = true;
         } else {
@@ -105,7 +105,7 @@ void game::shop() {
 
     bool valid = false;
 
-    while (valid == false) {
+    while (!valid) {
         if (input == "0" || input == "1" || input == "2" || input == "3" || input == "4" || input == "5" || input == "6" || input == "7") {
             valid = true;
         } else {
@@ -149,15 +149,18 @@ void game::iBody() {
     bool valid = false;
 
     std::string input;
-    std::cin >> input;
+
 
     while (valid == false) {
+        std::cin >> input;
+
         if (input == "0") {
             valid = true;
         } else {
             std::cout << "Invalid Input" << std::endl;
         }
     }
+
 
 }
 void game::iMask(){
