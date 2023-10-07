@@ -15,7 +15,7 @@ public:
     inventory();
 
     int getMoney();
-    void setMoney(int money);
+    void setMoney(nt money);
 
     std::vector<item> getOwnedItems();
     void setOwnedItems(item& itemIn);
